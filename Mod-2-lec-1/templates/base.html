@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Aplicación Flask</h1>
+      <nav>
+        <a href="{{ url_for('index') }}">Inicio</a> |
+        <a href="{{ url_for('page1') }}">Página 1</a> |
+        <a href="{{ url_for('page2') }}">Página 2</a>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <p>&copy; 2025 Mi Aplicación Flask</p>
+    </footer>
+  </body>
+</html>
